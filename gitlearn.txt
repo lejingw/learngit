@@ -1,6 +1,5 @@
 $ git add readme.txt 
 $ git commit -m "branch test"
-  aa
 
 #¹ØÁªÔ¶³Ì²Ö¿â
 $ git remote add origin git@github.com:michaelliao/learngit.git
