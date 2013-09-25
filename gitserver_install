@@ -8,5 +8,13 @@ sudo adduser git
 收集所有登陆用户的公钥，就是他们自己的id_rsa.pub件
 把所有的公钥导入到/home/git/.ssh/authorized_keys件里，一行一个
 
-4、初始化git仓库
+4、初始化git仓库，git会创建一个裸仓库，罗仓库没有工作区，纯粹为了共享
 sudo git init --bare sample.git
+sudo chown git:git sample.git
+
+5、禁用登陆shell，把/bin/bash改为/usr/bin/git-shell
+sudo vi /etc/passwd
+
+6、本地克隆远程仓库
+git clone git@serverip:/src/sample.git
+
