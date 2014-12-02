@@ -71,3 +71,17 @@ $ git pull
 #---------------------------------标签管理--------------------------------
 #
 $git branch
+
+#---------------------------------远程库操作--------------------------------
+#添加一个远程库 新建一个远程库，并命名为upstream
+git remote add upstream git://github.com/octocat/Spoon-Knife.git
+#从远程库获取代码
+git fetch upstream
+#合并到当前开发分支
+git merge upstream/master
+#将本地更新Push到远程库
+#将本地master上传到upstream
+git push upstream master
+#删除名为upstream的远程库
+git remote rm upstream
+
