@@ -65,7 +65,9 @@ $ git remote -v
 #本地新建的分支如果不推送到远程，对其他人就是不可见的
 
 #git pull失败了提示"no tracking information"，没有指定本地分支dev与远程origin/dev分支的链接
-$ git branch --set-upstream dev origin/dev
+$ git push origin dev
+$ git branch --set-upstream-to=origin/dev dev
+$ git branch --set-upstream dev origin/dev  #despa
 $ git pull
 
 #---------------------------------标签管理--------------------------------
