@@ -36,7 +36,7 @@ $ git branch -d dev
 $ git log --graph --pretty=oneline --abbrev-commit
 
 #通常git会用“Fast forward”模式，删除分支后，会丢掉分支信息
-#如果要金庸“Fast forward”模式，git就会在merge时声称一个新的commit，这样，从分支历史上就可以看出分支信息
+#如果要禁用“Fast forward”模式，git就会在merge时声称一个新的commit，这样，从分支历史上就可以看出分支信息
 $ git merge --no-ff -m "merge with no-ff" dev
 $ git log --graph --pretty=oneline --abbrev-commit
 
